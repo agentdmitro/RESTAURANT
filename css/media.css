@@ -1,0 +1,432 @@
+@media (max-width: 1300px){
+    .contact__form-input{
+        width: 100%;
+    }
+    .contact__main-input{
+        width: 315px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about,
+    .contact{
+        padding: 30px 0;
+    }
+    .about__inner,
+    .team__inner,
+    .spec__content-info{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .spec__content-info{
+        display: block;
+    }
+
+    .booking__inner{
+        max-width: 564px;
+        margin: 0 auto;
+    }
+    .img-box-after::after,
+    .img-box-before::before{
+        display: none;
+    }
+    .team__inner,
+    .booking__inner,
+    .spec__content-info{
+        padding: 20px 0;
+    }
+    .spec{
+        padding-bottom: 0;
+        background-image: url(../img/spec-big.png);
+        height: 1050px;
+    }
+    .team{
+        padding-bottom: 0;
+        background-image: url(../img/team-big.png);
+        height: auto;
+    }
+    .team__header{
+        height: 50px;
+    }
+    .swiper-container{
+        height: auto;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 0px;
+    }
+    .spec__text{
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 1120px) {
+    body.lock {
+      overflow: hidden;
+    }
+    .header__body {
+      height: 50px;
+    }
+    .header__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 999;
+    }
+    .header__burger span {
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 9px;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    .header__burger:before,
+    .header__burger:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+      top: 0;
+    }
+    .header__burger:after {
+      bottom: 0;
+    }
+    .header__burger.active:before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 9px;
+    }
+    .header__burger.active:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    .header__burger.active span {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /*для прокрутки меню, когда оно не помещается в экран*/
+        overflow: auto;
+        z-index: 998;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 70px 10px 20px 10px;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .header__menu.active {
+      top: 0;
+    }
+    .header__list {
+      display: block;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+    .header__list li {
+      margin: 0 0 30px 0;
+    }
+    .header__link {
+      font-size: 24px;
+    }
+    .header__inner{
+        display: none;
+    }
+    .mobile__inner{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .header__logo-img{
+        width: 80px;
+        height: 80px;
+    }
+    .header__logo{
+        padding-top: 0;
+    }
+    .main{
+        margin-top: 120px;
+    }
+    .main__work{
+        left: -100px;
+    }
+    .main__social{
+        right: 25px;
+    }
+    .events{
+        display: none;
+    }
+}
+
+@media (max-width: 1090px){
+    .gallery__inner{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .menu__inner{
+        max-width: 341px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 980px){
+    .contact__main-input{
+        width: 270px;
+    }
+    .contact__form2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact__btn{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 934px){
+    .face{
+        height: 720px;
+    }
+    .main__title {
+        font-size: 76px;
+    }
+    .main__title::after{
+        margin: 18px auto 40px;
+    }
+    .main__btn-link{
+        width: 190px;
+        padding: 18px 0;
+    }
+    .contact__main-input {
+        width: 245px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .main__work,
+    .main__social{
+        display: none;
+    }
+    .face{
+        height: 100vh;
+    }
+    .menu{
+        display: none;
+    }
+    .contact__form-main{
+        max-width: 245px;
+        margin: 0 auto 10px;
+    }
+    .contact__form-item + .contact__form-item{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 724px){
+    .gallery__img{
+        width: 220px;
+        height: auto;
+    }
+    .gallery__inner{
+        max-width: 440px;
+    }
+}
+
+
+@media (max-width: 665px){
+    .main__title{
+        font-size: 64px;
+    }
+    .main__descr{
+        margin-bottom: 8px;
+        font-size: 11px;
+    }
+    .main__btn-link{
+        padding: 12px 0;
+    }
+}
+
+
+@media (max-width: 600px){
+
+    .about__img-item,
+    .about__img,
+    .team__img-item,
+    .team__img,
+    .booking__img-item,
+    .booking__img,
+    .spec__img-item,
+    .spec__img{
+        width: 370px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .booking__inner{
+        max-width: 450px;
+    }
+    .booking__list-input{
+        width: 220px;
+    }
+    .spec{
+        height: 950px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .main__title{
+        font-size: 56px;
+        margin-bottom: 50px;
+    }
+    .main__descr{
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .main__title::after{
+        display: none;
+    }
+    .main__buttons{
+        width: 405px;
+    }
+    .main{
+        margin-top: 85px;
+    }
+    
+}
+
+@media (max-width: 472px){
+    .main__title{
+        font-size: 50px;
+        margin-bottom: 44px;
+    }
+    .main__btn-link{
+        width: 160px;
+    }
+    .main__buttons{
+        width: 365px;
+    }
+    .booking__inner{
+        max-width: 370px;
+    }
+    .booking__list-input {
+        width: 180px;
+    }
+    .booking__info{
+        display: none;
+    }
+}
+
+@media (max-width: 440px){
+    .gallery__inner{
+        max-width: 370px;
+    }
+    .gallery__img{
+        width: 185px;
+    }
+    .contact__btn-link{
+        width: 310px;
+        padding: 17px 0;
+    }
+}
+
+@media (max-width: 430px){
+    .main__descr {
+        margin-bottom: 15px;
+    }
+    .main__title{
+        font-size: 40px;
+    }
+    .main__buttons{
+        width: 330px;
+    }
+    .main__btn-link{
+        width: 145px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 390px){
+    .about__img-item,
+    .about__img,
+    .team__img-item,
+    .team__img,
+    .booking__img-item,
+    .booking__img,
+    .spec__img-item,
+    .spec__img{
+        width: 330px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .booking__list-input {
+        width: 160px;
+    }   
+    .booking__btn-link{
+        padding: 17px 0;
+    }
+    .booking__inner{
+        max-width: 330px;
+    }
+}
+
+@media (max-width: 370px){
+    .gallery__inner{
+        max-width: 300px;
+    }
+    .gallery__img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 350px){
+    .main__buttons{
+        width: 300px;
+    }
+
+    .about__img-item,
+    .about__img,
+    .team__img-item,
+    .team__img,
+    .booking__img-item,
+    .booking__img,
+    .spec__img-item,
+    .spec__img{
+        width: 260px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .booking__inner{
+        max-width: 290px;
+    }
+    .booking__list-input {
+        width: 140px;
+    }
+
+
+    
+}
